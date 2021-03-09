@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random Password Generator Web App</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    </head>
+    <body>
+    
+        <div class=" text-center" style="background-color: #F3FCFB;">
+            <h3 class="text-success p-3">Random Password Generator</h3>
+        
+ 
+    
+    <div class=" text-center" style="background-color: #FFFED9;">
+    <p class="text-warning fs-5 p-2">You can make your own random password using this web app. Isn't it interesting!</p>
+          
+    
+        <form action="{% url 'password' %}"><p class="text-success fw-bold">Password Length
+            <select name='length'>
+                <option value=6 selected='selected' >6</option> <!--selected='selected' means by default it will show 6-->
+                <option value=7 >7</option> 
+                <option value=8>8</option>
+                <option value=9>9</option>
+                <option value=10>10</option>
+                <option value=11>11</option>
+                <option value=12>12</option>
+                <option value=13>13</option>
+                <option value=14>14</option>
+            </select>
+</p>
+            
+            <p class="text-success fw-bold"><input type='checkbox' name='uppercase'> Uppercase</p>
+            <p class="text-success fw-bold"><input type='checkbox' name='numbers'> Numbers <p>
+            <p class="text-success fw-bold"><input type='checkbox' name='special'> Special Characters <p>
+            <p class="text-success fw-bold"><input type='checkbox' name='symbol'> Symbol <p>
+            <div class="d-grid gap-2 col-2 mx-auto">
+                <input type='submit'class="btn btn-outline-success" value='Generate Password'>
+                
+            </div>
+            
+        </form>
+
+
+
+
+
+</div>
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+
+
+
+
+    </body>
+</html>
